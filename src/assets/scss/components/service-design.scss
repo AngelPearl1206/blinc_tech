@@ -1,0 +1,298 @@
+* {
+    font-family: Barlow, sans-serif;
+}
+body {
+    background-color: #fcfcfc;
+}
+
+.design-hero {
+    background-color: #fcfcfc;
+    height: 2800px;
+
+    @media (max-width: 450px) {
+        height: 3200px;
+    }
+
+    @media (max-width: 1024px) {
+        height: 3000px;
+    }
+    
+    @media (max-width: 350px) {
+        height: 3400px;
+    }
+    @media (max-width: 768px) {
+        height: 3300px;
+    }
+
+    @media (max-width: 768px) {
+        height: 3400px !important;
+    }
+
+
+    .design-text {
+        font-size: 64px;
+        font-weight: 700;
+        color: $main-color;
+
+        @media (max-width: 450px) {
+            font-size: 40px;
+        }
+    }
+
+    .text-design {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .container-plan {
+        padding: 10rem 0;
+    }
+
+    .rates-design {
+        h2 {
+            font-size: 64px;
+            font-weight: 700;
+            color: $main-color;
+
+            @media (max-width: 450px) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    .links {
+        a {
+            color: #8D97B0; 
+            text-decoration: none; 
+            padding: 0.5rem 1rem; 
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;  
+
+            @media (max-width: 500px) {
+                font-size: 16px !important;
+            }
+
+            @media (max-width: 380px) {
+                font-size: 16px !important;
+                padding: 0 !important;
+            }
+
+            @media (max-width: 321px) {
+                font-size: 14px !important;
+                padding: 0 !important;
+            }
+    
+            &:hover, &.active {
+                color: $main-color; 
+                text-decoration: none; 
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 64px;
+        color: white;
+    }
+    
+    .project {
+        height: 100%;
+        text-align: center;
+        min-height: 610px;
+        background-color: aqua;
+    }
+    
+    .background-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* Ensure it stays behind the foreground images */
+        text-align: center;
+    
+    
+        @media (max-width: 768px) {
+            font-size: 3.6rem; 
+        }
+    }
+    
+    .project {
+        height: 100%;
+        text-align: center;
+        min-height: 610px;
+        background-color: aqua;
+    }
+
+    .background-text {
+        position: absolute;
+        top: 84px;
+        right: 10px;
+        z-index: -1;
+        font-size: 170px;
+        text-align: center;
+        width: 100%;
+        opacity: 0.25;
+
+        @media (max-width: 768px) {
+            font-size: 50px;
+            top: -30px;
+        }
+    }
+
+    .foreground-images {
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+        position: relative;
+        top: 93px;
+        right: 0;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            align-items: center; 
+        }
+    }
+
+    .mockup-img {
+        max-width: 30%; 
+        
+        @media (max-width: 768px) {
+            max-width: 80%;
+        }
+    }
+
+    .rates {
+
+        h2 {
+            font-size: 64px;
+        }
+    }
+
+    .rates-section {
+        background-color: #f8f9fa; 
+        padding: 2rem;
+        border-radius: 0.5rem;
+        font-size: 24px;
+
+        @media (max-width: 450px) {
+            font-size: 16px;
+            text-align: left;
+        }
+        
+
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        .service-name {
+            font-weight: 700;
+            font-size: 24px;
+            color: $main-color;
+
+            @media (max-width: 450px) {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+
+        .price {
+            font-weight: bold;
+            color: #000; 
+
+            @media (max-width: 450px) {
+                font-size: 16px;
+                text-align: right;
+            }
+        }
+
+        .col-md-4 {
+            p {
+                margin-bottom: 0.25rem; 
+            }
+        }
+
+        .row {
+            margin-bottom: 1.5rem; 
+        }
+    }
+
+    .my-5 {
+        padding-top: 200px;
+    }
+}
+
+h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #4C539F;
+
+    @media (max-width: 450px) {
+        font-size: 40px;
+    }
+}
+
+.how-it-works {
+    height: 50%;
+    background-color: #fcfcfc;
+    padding: 4rem 0;
+    position: relative;
+
+
+    h2 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-family: Barlow, sans-serif;
+        font-size: 64px;
+        color: #4C539F;
+
+        @media (max-width: 450px) {
+            font-size: 40px;
+        }
+    }
+
+    h4 {
+        color: #4C539F;
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    .row {
+        margin-top: 1rem; 
+    }
+
+    .col-md-3 {
+        padding: 3rem; 
+
+        h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem; 
+        }
+
+        p {
+            margin-top: 0.5rem; 
+        }
+    }
+
+    .box {
+        background: var(--Colors-Neutral-N50, #F4F5F7);
+        padding: 54px;
+    }
+}
+

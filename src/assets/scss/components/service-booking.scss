@@ -1,0 +1,193 @@
+:root {
+  --blinc-primary-text-color: #4C539F;
+  --blinc-primary-button-color: #4C539F;
+  --blinc-primary-button-hover: #3A407E;
+  --blinc-warning-button-color: #FFC107;
+  --blinc-warning-button-hover: #E0A800;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  color: var(--blinc-primary-text-color);
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(200deg);
+  cursor: pointer;
+}
+
+input[type="date"], input[type="time"] {
+  color: var(--blinc-primary-text-color);
+}
+
+.form-input-rounded {
+  border-radius: 0.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 28rem;
+  width: 90%;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--blinc-primary-text-color);
+}
+
+.close-button:hover {
+  color: var(--blinc-primary-button-hover);
+}
+
+.text-indigo-700,
+.text-gray-600,
+.text-gray-700,
+.text-gray-800,
+.text-gray-500 {
+  color: var(--blinc-primary-text-color);
+}
+
+.text-red-600 {
+  color: #EF4444;
+}
+
+.bg-indigo-600 {
+  background-color: var(--blinc-primary-button-color);
+}
+
+.hover\:bg-indigo-700:hover {
+  background-color: var(--blinc-primary-button-hover);
+}
+
+.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.row.align-items-center {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.bg-primary {
+  background-color: #4C539F !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-primary {
+  color: var(--blinc-primary-text-color);
+}
+
+.text-white {
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--blinc-primary-button-color);
+  border-color: var(--blinc-primary-button-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--blinc-primary-button-hover);
+  border-color: var(--blinc-primary-button-hover);
+}
+
+.btn-warning {
+  background-color: var(--blinc-warning-button-color);
+  border-color: var(--blinc-warning-button-color);
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: var(--blinc-warning-button-hover);
+  border-color: var(--blinc-warning-button-hover);
+}
+
+.form-control, .form-select {
+  border-color: #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.1rem;
+}
+
+.form-control[type="file"] {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.form-check-label {
+  font-size: 1.1rem;
+  padding-left: 0.25rem;
+}
+
+.col-md-4.bg-primary h1.fw-bold {
+  font-size: 3rem;
+}
+
+.col-md-4.bg-primary p {
+  font-size: 1.25rem;
+}
+
+.col-md-8 .form-label {
+  font-size: 1.1rem;
+}
+
+.col-12.text-center {
+  text-align: center;
+}
+
+.booking-form-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.08);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+    

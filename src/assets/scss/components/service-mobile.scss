@@ -1,0 +1,161 @@
+.service{
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        color: $cfcf;
+    }
+}
+
+
+.mobile-dev  {
+    background-color: #fff;
+    * {
+        font-family: Barlow, sans-serif;
+
+    
+    }
+
+    p {
+        font-size: 64px;
+        font-weight: 700;
+        color: #4C539F;
+        
+        @media (max-width: 450px) {
+            font-size: 40px;
+        }
+    }
+
+    .text{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .links {
+        a {
+            color: #8D97B0; 
+            text-decoration: none; 
+            padding: 0.5rem 1rem; 
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            
+            @media (max-width: 500px) {
+                font-size: 16px !important;
+            }
+
+            @media (max-width: 380px) {
+                font-size: 16px !important;
+                padding: 0 !important;
+            }
+
+            @media (max-width: 321px) {
+                font-size: 14px !important;
+                padding: 0 !important;
+            }
+    
+            &:hover, &.active {
+                color: #4C539F; 
+                text-decoration: none; 
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+    .background-texts {
+        padding-top: 114px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 139px;
+        z-index: -1;
+        opacity: 0.25;
+        padding-bottom: 280px;
+        @media (max-width: 768px) {
+            font-size: 2rem; 
+            padding-bottom: 100px;
+        }
+    }
+    
+    .foreground-image {
+        position: relative;
+        text-align: center;
+        top: 100px;
+        gap: 2rem;
+        z-index: 1;
+
+    
+        @media (max-width: 768px) {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    }
+}
+
+.rates {
+
+    padding-top: 50px;
+    p {
+        font-size: 64px;
+        font-weight: 700;
+        color: #4C539F;
+
+        @media (max-width: 450px) {
+            font-size: 40px;
+        }
+    }
+
+    .text-center{
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.message {
+    height: 60vh;
+    position: relative;
+    z-index: 4; /* Message section */
+    background-image: linear-gradient(to right, #4C539F, #F70541);
+
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .send-message{
+        background-color: #4C539F;
+        color: $cfcf;
+        padding: 14px 56px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $cfcf;
+    }
+
+    .text-white {
+        text-align: center;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+
+        @media (max-width: 450px) {
+            font-size: 2rem;
+        }
+    }
+}
+

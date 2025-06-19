@@ -1,0 +1,198 @@
+body { /* Prevent scrolling while loading */
+  nav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 6;
+    transition: background-color 0.3s, color 0.3s;
+
+    &.sticky {
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Add this line to create the shadow
+      z-index: 6;
+
+      // Change SVG path color when sticky
+      .navbar-brand svg path {
+        fill: black;
+      }
+
+      .navbar-nav {
+        .nav-item {
+          color: black;
+
+          // Ensure the active link is black when sticky
+          .nav-link.active {
+            color: black !important;
+          }
+        }
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+      }
+
+      @media screen and (max-width: 1024px) {
+        &.sticky {
+          .nav-item {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .navbar-collapse {
+        background: none !important;
+      }
+
+      // .navbar-nav {
+      //   align-items: flex-start !important;
+      // }
+    }
+
+    .navbar-nav {
+      padding-left: 320px;
+      display: flex;
+      align-items: center !important;
+      flex-wrap: wrap; // Allow wrapping
+      gap: 30px;
+
+      @media (min-width: 1099px) and (max-width: 1700px) {
+        padding-left: 100px !important;
+      }
+
+      @media (min-width: 991px) and (max-width: 1201px) {
+        padding-left: 50px !important;
+        gap: 0 !important;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0; // Ensure no horizontal overflow
+        display: contents;
+      }
+
+      .active {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: #f7f7f7;
+      }
+    }
+
+    .nav-item {
+      font-size: 20px;
+      color: #f7f7f7;
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 20px;
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0; // Ensure no extra space on small screens
+        font-size: 16px; // Adjust font size for smaller screens
+      }
+    }
+
+    .navbar-brand {
+      padding-left: 320px;
+      font-size: 30px;
+      font-weight: 700;
+
+      @media screen and (max-width: 1920px) {
+        padding-left: 20px !important;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: 425px) {
+        padding-left: 0;
+        font-size: 24px; // Adjust brand font size for small screens
+      }
+    }
+
+    .btn-primary {
+      background-color: #4c519f;
+      border: none;
+      height: 32px;
+    }
+
+    .navbar-toggler {
+      border-color: transparent;
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+      }
+
+      .nav-item {
+        margin-bottom: 10px;
+
+        .nav-link .active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .text {
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the loader is above other content */
+    transition: opacity 1s ease-out; /* Fade-out transition */
+}
+
+.fade-in {
+    width: 10rem;
+    animation: fadeIn 1s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader .fade-in img {
+  max-width: 100px;
+  /* Adjust size as needed */
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.content.show {
+    opacity: 1;
+}
+
+}
+
+.navbar-nav {
+  .nav-link {
+    &.active,
+    &.show {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "simon/blinc_tech_b18",
+    "autoload": {
+        "psr-4": {
+            "Simon\\BlincTechB18\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SimonAquino",
+            "email": "144974424+SimonAquino@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

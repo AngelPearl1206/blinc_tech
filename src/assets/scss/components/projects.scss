@@ -1,0 +1,663 @@
+// Hero section for projects
+.project-hero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    h1 {
+      color: $cfcf;
+    }
+  }
+  
+  // Navigation links
+  .links {
+    a{
+      color: $c606;
+      font-weight: 700;
+      font-size: 25px;
+      text-decoration: none;
+    }
+
+    .active {
+      color: $main-color;
+    }
+
+  }
+
+  // @media (max-width: 2560px) {
+  //   .project-hero {
+  //     height: 50vh;
+  //   }
+  // }
+
+  // @media (max-width: 1140px) {
+  //   .project-hero {
+  //     height: 40vh;
+  //   }
+  // }
+
+  // @media (max-width: 1024px) {
+  //   .project-hero {
+  //     height: 35vh;
+  //   }
+  // }
+
+  // @media (max-width: 768px) {
+  //   .project-hero {
+  //     height: 30vh;
+  //     flex-direction: column;
+  //     padding: 1rem;
+  //   }
+  // }
+
+  // @media (max-width: 425px) {
+  //   .project-hero {
+  //     height: 25vh;
+  //   }
+  // }
+
+  // @media (max-width: 375px) {
+  //   .project-hero {
+  //     height: 20vh;
+  //   }
+  // }
+
+  // @media (max-width: 320px) {
+  //   .project-hero {
+  //     height: 68vh;
+  //   }
+  // }
+  
+  // Common styles for project sections
+  .compumatrix,
+  .kolab,
+  .club,
+  .axie
+  .bibe
+  .densen
+  .blinc {
+    width: 100%;
+    height: auto;
+    background-color: $cfcf;
+
+    @media (max-width: 320px) {
+        height: 727px;
+      }
+  }
+  
+
+  // Styles for images within project sections
+  .compumatrix,
+  .club,
+  .kolab,
+  .axie,
+  .blinc,
+  .densen,
+  .bibe {
+    .Images {
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 2560px) {
+      width: 100%;
+    }
+    @media (max-width: 1024px) {
+      width: 131%;
+    }
+
+    @media (max-width: 768px) {
+      width: 164%;
+    }
+
+    @media (max-width: 480px) {
+      width: 70%;
+    }
+
+    @media (max-width: 320px) {
+      width: 122%;
+        top: -195px; 
+        right: 12px;
+    }
+    
+  }
+
+  .con-compu {
+
+    
+    @media (max-width: 1366px) {
+      position: relative;
+      left: 50px;
+    }
+
+    @media (max-width: 320px) {
+      position: relative;
+      left: -6px;
+    }
+
+  }
+}
+  
+  // Styles for the "check" section
+  .check {
+    background-color: $color-dark-blue;
+    color: $cfcf;
+    width: 50%;
+  }
+  
+  // Z-index utility classes
+  .z-index-1 {
+    z-index: 1;
+    position: relative;
+    right: 170px;
+  }
+  
+  .z-index-2 {
+    position: relative;
+    z-index: 2;
+    top: 16px;
+  }
+  
+  // Styles for the Compumatrix hero section
+  .compu-hero {
+    background-color: $cfcf;
+    z-index: -1;
+  
+    .container-plan {
+      padding: 10rem 0;
+    }
+
+    @media (min-width: 426px) {
+      .compu-hero {
+        padding: 5rem 2rem;
+      }
+    
+      .links {
+        flex-direction: row;
+      }
+    
+      .row > div {
+        text-align: left;
+      }
+    
+      .img {
+        text-align: left;
+      }
+    
+    }
+
+    .options {
+      z-index: 3;
+      position: relative;
+    }
+  }
+  
+  // Styles for crypto, space, and archipelago sections
+  .crypto,
+  .space,
+  .archipelago {
+    color: $cfcf;
+    width: 50%;
+  }
+  
+  // Specific styles for crypto section
+  .crypto {
+    background-color: $color-purple;
+  }
+  
+  // Styles for cryptosavers section
+  .cryptosavers {
+    h1 {
+      color: $color-purple;
+    }
+  }
+  
+  // Styles for space section
+  .space {
+    background-color: $color-blue;
+  }
+  
+  // Styles for archipelago section
+  .archipelago {
+    background-color: $color-light-blue;
+  }
+
+
+
+  // Specific styles for kolab section
+  .kolab{
+    height: auto;
+    
+    @media (max-width: 320px) {
+      height: 67vh;
+    }
+  }
+  
+  // Specific styles for axie section
+  .axie {
+    height: auto;
+    
+    @media (max-width: 320px) {
+      height: 67vh;
+    }
+  }
+  
+  // Specific styles for blinc section
+  .blinc {
+    height: auto;
+  
+    h1 {
+      color: $color-dark-purple;
+    }
+      
+    @media (max-width: 320px) {
+      height:67px;
+    }
+  }
+  
+  // Styles for va section
+  .va {
+    background-color: $color-dark-purple;
+    color: $cfcf;
+  }
+  
+  // Specific styles for densen section
+  .densen {
+    height: auto;
+
+    @media (max-width: 320px) {
+
+      height: 74vh;
+    }
+  }
+
+  // Specific styles for bibe section
+  .bibe {
+    height: autovh;
+
+    @media (max-width: 320px) {
+
+      height: 74vh;
+    }
+  }
+  
+  // Styles for law section
+  .law {
+    background-color: $color-green;
+    color: $cfcf;
+  }
+  
+  // Styles for token section
+  .token {
+    background-color: $c171;
+    color: $cfcf;
+  }
+  
+  // Common background color for bg-color and bg-color2
+  .bg-color,
+  .bg-color2 {
+    background-color: $gray-bg;
+  }
+  
+  // Specific styles for compumatrix bg-color
+  .compumatrix {
+
+    .bg-color {
+      height: 558px;
+      bottom: 709px;
+      left: 760px;
+      width: 1000px;
+
+      @media (max-width: 2560px) {
+        left: 821px;
+        width: 940px;
+        top: 179px;
+      }
+
+      @media (max-width: 1920px) {
+        left: 554px;
+        width: 875px;
+        top: 181px;
+      }
+
+      
+      @media (max-width: 1440px) {
+          left: 328px;
+          width: 875px;
+        }
+
+        @media (max-width: 1366px) {
+          left: 302px;
+          width: 821px;
+          height: 485px;
+        }
+        
+    @media (max-width: 1024px) {
+      left: 232px;
+      width: 669px;
+      bottom: 205px;
+      height: 520px;
+    }
+
+    @media (max-width: 768px) {
+      left: 148px;
+        width: 602px;
+        bottom: 433px;
+        height: 481px;
+    }
+
+    @media (max-width: 320px) {
+      left: -3px;
+        width: 323px;
+        bottom: 8px;
+        height: 588px;
+        top: 230px;
+    }
+  }
+}
+  
+  // Specific styles for bg-color2 in various sections
+  .club,
+  .kolab,
+  .axie,
+  .blinc,
+  .densen,
+  .bibe {
+    .bg-color2 {
+        height: 562px;
+        bottom: 785px;
+        left: 757px;
+        width: 1000px;
+
+        @media (max-width: 2560px) {
+          height: 562px;
+          bottom: 45px;
+          left: 829px;
+          width: 927px;
+
+        }
+
+        @media (max-width: 1920px) {
+          left: 554px;
+          width: 875px;
+          top: 96px;
+        }
+
+        @media (max-width: 1440px) {
+            left: 328px;
+            width: 875px;
+        }
+
+        @media (max-width: 1366px) {
+          left: 301px;
+        width: 821px;
+        height: 481px;
+        }
+
+
+        @media (max-width: 1024px) {
+          left: 230px;
+          width: 674px;
+          bottom: 278px;
+          height: 524px;
+        }
+
+        @media (max-width: 768px) {
+          left: 148px;
+          width: 602px;
+          bottom: 433px;
+          height: 481px;
+        }
+        @media (max-width: 320px) {
+          left: 1px;
+          width: 323px;
+          bottom: 80px;
+          height: 499px;
+        }
+    }
+}
+
+  
+
+  // Styles for laptop image
+  .laptop-image {
+    width: 400px;
+
+    height: auto;
+
+    top: 63px;
+    position: relative; 
+
+
+    @media (max-width: 320px) {
+      width: 66%;
+      top: 119px;
+      left: 47px;
+      z-index: 3;
+    }
+  }
+
+  // Styles for com image
+  .com-image {
+    top: 103px;
+
+    @media (max-width: 1366px) {
+
+      top: 62px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 111px; // Adjust the value as needed
+    }
+
+    @media (max-width: 768px) {
+
+      top: 44px; // Adjust the value as needed
+    }
+
+    @media (max-width: 320px) {
+
+      top: 100px; // Adjust the value as needed
+    } 
+  }
+
+  // Styles for crypto image
+  .crypto-image {
+    top: 63px;
+
+    @media (max-width: 1366px) {
+
+      top: 16px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 65px; // Adjust the value as needed
+    }
+
+    @media (max-width: 768px) {
+
+      top: 65px; // Adjust the value as needed
+    }
+
+    @media (max-width: 320px) {
+
+      top: 100px; // Adjust the value as needed
+    }
+}
+
+
+  // Styles for kolab image
+  .kolab-image {
+    top: 63px;
+
+    @media (max-width: 1366px) {
+
+      top: 14px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 65px; // Adjust the value as needed
+    }
+
+    @media (max-width: 320px) {
+
+      top: 100px !important;// Adjust the value as needed
+    }
+
+    @media (max-width: 768px) {
+
+      top: 21px; // Adjust the value as needed
+    }
+  }
+
+  // Styles for axie image
+  .axie-image {
+    top: 104px;
+
+    @media (max-width: 1366px) {
+
+      top: 51px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 103px; // Adjust the value as needed
+    }  
+
+
+    @media (max-width: 768px) {
+
+      top: 23px; // Adjust the value as needed
+    }  
+
+    @media (max-width: 320px) {
+
+      top: 100px !important; // Adjust the value as needed
+    }
+  }
+
+  // Styles for blinc image
+  .blinc-image {
+    top: 63px;
+
+    @media (max-width: 1366px) {
+
+      top: 14px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 65px; // Adjust the value as needed
+    }
+
+    @media (max-width: 768px) {
+
+      top: 23px; // Adjust the value as needed
+    }
+  }
+
+
+  // Styles for densen image
+  .densen-image {
+    top: 87px;
+
+    @media (max-width: 1366px) {
+
+      top: 37px; // Adjust the value as needed
+    }
+
+  
+    @media (max-width: 320px) {
+      top: 100px !important;
+      width: 67% !important;
+    }
+
+    @media (max-width: 768px) {
+      top: 70px !important;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 111px; // Adjust the value as needed
+    }
+  }
+
+  // Styles for bibe image
+  .bibe-image {
+    top: 63px;
+
+    @media (max-width: 1366px) {
+
+      top: 14px; // Adjust the value as needed
+    }
+
+    @media (max-width: 1024px) {
+
+      top: 65px; // Adjust the value as needed
+    }
+
+    @media (max-width: 768px) {
+
+      top: -4px; // Adjust the value as needed
+    }
+    @media (max-width: 320px) {
+
+      top: 100px; // Adjust the value as needed
+    }
+  }
+
+  // Styles for message project section
+  .message-project {
+    height: 60vh;
+    position: relative;
+    z-index: 4; /* Message section */
+    background-image: linear-gradient(to right, #4C539F, #F70541);
+
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-message{
+        background-color: #4C539F;
+        color: $cfcf;
+        padding: 14px 56px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $cfcf;
+    }
+
+    .text-white {
+        text-align: center;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        
+        @media (max-width: 320px) {
+
+          font-size: 19px;
+      }
+    }
+    .btn-primary{
+        background-color: #4C539F;
+        padding: 14px 56px;
+    }
+    
+}
+
+
+  
